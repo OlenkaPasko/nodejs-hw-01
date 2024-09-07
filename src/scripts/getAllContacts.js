@@ -1,5 +1,4 @@
 import * as fs from "node:fs/promises"
-
 import { PATH_DB } from '../constants/contacts.js';
 
 const getAllContacts = async () => {
@@ -7,5 +6,4 @@ const getAllContacts = async () => {
      return JSON.parse(data);//повертаємо дані пропушені через джейсон.парс
 };
 
-console.log(await getAllContacts());
 export default getAllContacts;
